@@ -1,4 +1,4 @@
-package com.sda.pizzeria;
+package com.pizzeria;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

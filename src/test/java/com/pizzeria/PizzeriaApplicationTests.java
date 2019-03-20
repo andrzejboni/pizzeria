@@ -1,4 +1,4 @@
-package com.sda.pizzeria;
+package com.pizzeria;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
