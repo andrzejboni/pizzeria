@@ -1,6 +1,5 @@
 package com.pizzeria.component;
 
-
 import com.pizzeria.model.AppUser;
 import com.pizzeria.model.UserRole;
 import com.pizzeria.repository.AppUserRepository;
