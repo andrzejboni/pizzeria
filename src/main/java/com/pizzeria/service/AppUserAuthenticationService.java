@@ -27,9 +27,8 @@ public class AppUserAuthenticationService implements UserDetailsService {
 
             List<String> roles = appUser.getRoles()
                     .stream()
-                    .map(userRole -> userRole.getName())
+                    .map(userRole -> userRole.getName().replace("ROLE",""))
                     .collect(Collectors.toList());
-
 
             return User.builder()
                     .username(appUser.getUsername())
@@ -38,6 +37,6 @@ public class AppUserAuthenticationService implements UserDetailsService {
                     .build();
         }
 
-        return null;
+        throw new UsernameNotFoundException("Username could not be found.");
     }
 }
